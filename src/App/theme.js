@@ -1,9 +1,9 @@
 import { createTheme } from "@mui/material";
-import { blue, green } from "@mui/material/colors";
+import { indigo, lightBlue } from "@mui/material/colors";
 
 export default createTheme({
   palette: {
-    primary: blue,
-    secondary: green,
+    primary: indigo,
+    secondary: lightBlue,
   },
 });
