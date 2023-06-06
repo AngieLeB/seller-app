@@ -21,11 +21,11 @@ export const MenuListItem = styled("li")(() => ({
 export const MenuListLink = styled(Link, {
   shouldForwardProp: (prop) => prop !== "current",
 })(({ current, theme }) => ({
-  display: "inline-block",
+  display: "flex",
+  alignItems: "center",
   height: theme.spacing(5),
   paddingLeft: theme.spacing(2),
   paddingRight: theme.spacing(2),
-  verticalAlign: "baseline",
   textDecoration: "none",
   color: theme.palette.common.white,
   ...(current && {
