@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../ds/templates";
-import { CommandesPage, ErrorPage, ProductsPage } from "../ds/pages";
+import { CommandesPage, ErrorPage, ProductsPage } from "./pages";
 
 export default createBrowserRouter([
   {
