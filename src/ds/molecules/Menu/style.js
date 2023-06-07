@@ -13,11 +13,6 @@ export const MenuList = styled("ol")(() => ({
   height: "40px",
 }));
 
-export const MenuListItem = styled("li")(() => ({
-  color: "white",
-  height: "40px",
-}));
-
 export const MenuListLink = styled(Link, {
   shouldForwardProp: (prop) => prop !== "current",
 })(({ current, theme }) => ({
