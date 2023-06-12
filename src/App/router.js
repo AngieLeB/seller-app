@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../ds/templates";
-import { CommandesPage, ErrorPage, ProductsPage } from "./pages";
+import { CommandesPage, ErrorPage, ProductsPage, ProductPage } from "./pages";
 
 export default createBrowserRouter([
   {
@@ -12,6 +12,10 @@ export default createBrowserRouter([
       {
         path: "commandes",
         element: <CommandesPage />,
+      },
+      {
+        path: "products/:productId",
+        element: <ProductPage />,
       },
     ],
   },
