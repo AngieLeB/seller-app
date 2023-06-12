@@ -1,3 +1,5 @@
 import ky from "ky";
 
-export default ky.create({ prefixUrl: "http://localhost:3004" });
+export default ky.create({
+  prefixUrl: "https://my-json-server.typicode.com/AngieLeB/seller-app",
+});

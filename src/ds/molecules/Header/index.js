@@ -1,7 +1,11 @@
 import { Typography, AppBar, Toolbar, Link as MuiLink } from "@mui/material";
+import { UserContext } from "../../../context";
 import { string } from "prop-types";
 import { Link } from "react-router-dom";
+
 export default function Header({ title, caption }) {
+  const { isLoggedIn, salesChannel } = UserContext.useUser();
+  console.log({ isLoggedIn, salesChannel });
   return (
     <AppBar position="static">
       <Toolbar>
