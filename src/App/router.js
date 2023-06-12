@@ -1,7 +1,7 @@
 import { ProductRoute } from "../ds/molecules";
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../ds/templates";
-import { CommandesPage, ErrorPage, ProductsPage } from "./pages";
+import { CommandesPage, ErrorPage, HomePage, ProductsPage } from "./pages";
 
 export default createBrowserRouter([
   {
@@ -11,7 +11,7 @@ export default createBrowserRouter([
     children: [
       {
         index: true,
-        element: <CommandesPage />,
+        element: <HomePage />,
       },
       {
         path: "products",
