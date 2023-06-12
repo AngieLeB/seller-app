@@ -1,7 +1,8 @@
 import { useProducts } from "../../../hooks";
-import { useParams } from "react-router-dom";
-import { CircularProgress, Typography } from "@mui/material";
+import { Link, useParams } from "react-router-dom";
+import { CircularProgress, IconButton, Stack, Typography } from "@mui/material";
 import { Image } from "mui-image";
+import { ArrowBack } from "@mui/icons-material";
 
 //TODO refactor Image and ProductImage
 export default function ProductPage() {
@@ -11,7 +12,13 @@ export default function ProductPage() {
   const { name, imageUrl } = product;
   return (
     <>
-      <Typography variant="h2">{name}</Typography>
+      <Stack direction="row" spacing={2}>
+        <IconButton aria-label="back" component={Link} to="/products">
+          <ArrowBack />
+        </IconButton>
+        <Typography variant="h4">{name}</Typography>
+      </Stack>
+
       <Image src={imageUrl} alt={name} width={200} duration={250} />
     </>
   );
